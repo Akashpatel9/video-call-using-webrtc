@@ -107,6 +107,10 @@ io.on('connection', (socket) => {
   });
 });
 
+app.get('/', (req, res) => {
+  res.send('Hello World');
+});
+
 // Basic Express error handler
 app.use((err, req, res, next) => {
   console.error(err.stack);
